@@ -1,0 +1,26 @@
+These are the IP addresses as reached from the emulator:
+
+10.0.2.1, Router/gateway address.
+10.0.2.2, Special alias to your host loopback interface (i.e., 127.0.0.1 on your development machine)
+10.0.2.3, First DNS server
+10.0.2.4 / 10.0.2.5 / 10.0.2.6, Optional second, third and fourth DNS server (if any)
+10.0.2.15, The emulated device's own network/ethernet interface
+127.0.0.1, The emulated device's own loopback interface
+That said, we have:
+
+Common mistake 1: accessing 127.0.0.1 from the emulator trying to reach your host machine. Use 10.0.2.2, as I said.
+Common mistake 2: Trying to access an emulator service on HostComputerIP:appServicePort. It won't work since your host computer itself (Windows, Linux, OS etc.) is not running a service in that port. You need to redirect a port on the emulator console to a port on an emulated Android instance itself (see 2 below).
+Common networking needs:
+
+1- Emulator app as client and local computer as server
+
+Because the emulator is NAT'd, I believe you can connect to any computer on your local network directly. I mean, since the virtual router has access to both networks, it should be able to handle outgoing (i.e., emulator->real lan) connections just fine.
+
+Example: on my network (192.168.0.x), I can connect from the emulator to my real router (192.168.0.254) just pointing the emulator web browser to http://192.168.0.254:port. I use different services on it (hail to Tomato!), and I can access all of them on each port. No need to handle port forwarding, as expected.
+
+By the looks of your code, I believe you need:
+
+// I assume 192.168.0.114 is your server, which is
+// located on your local network, running a server application
+// on port 9999.
+cSocket = new Socket("192.168.0.114",9999);

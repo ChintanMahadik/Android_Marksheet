@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.exercise.AndroidClient"
+      android:versionCode="1"
+      android:versionName="1.0">
+      
+     <uses-sdk android:minSdkVersion="14" />
+     
+	<uses-permission android:name="android.permission.INTERNET"/>
+    
+    <application
+        android:icon="@drawable/logo1"
+        android:label="Marksheet Generator"
+        android:theme="@android:style/Theme.DeviceDefault">
+                
+          <activity android:name=".Grades" >
+            <intent-filter>
+                <action android:name="android.intent.action.MARKSHEET2" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+           <activity android:name=".Welcome" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+          
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.FIRST" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+            
+            <activity android:name=".AndroidClient" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOGIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+             <activity android:name=".Marksheet" >
+            <intent-filter>
+                <action android:name="android.intent.action.MARKSHEET" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+            
+        <activity android:name=".Feedback" >
+            <intent-filter>
+                <action android:name="android.intent.action.FEEDBACK" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+       <activity android:name=".Fresult" >
+            <intent-filter>
+                <action android:name="android.intent.action.FRESULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+                  
+             
+             
+             
+    </application>
+    
+    
+   
+	
+	
+</manifest> 

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:background="@drawable/bluesh" >
+
+  
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/result" />
+    
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+    	android:layout_marginBottom="370dp"
+        android:src="@drawable/mufoot" />
+
+    <Button
+        android:id="@+id/marks"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Marksheet" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/princi"
+        android:layout_alignBottom="@+id/princi"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:text="date" />
+
+    <TextView
+        android:id="@+id/princi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/marks"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="25dp"
+        android:text="princi" />
+
+    <TextView
+        android:id="@+id/percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:text="percent"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/Desp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/percent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="29dp"
+        android:text="description"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <android.widget.TextClock
+        android:id="@+id/textClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginTop="56dp" />
+
+</RelativeLayout>

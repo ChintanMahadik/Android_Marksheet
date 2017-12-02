@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:isScrollContainer="true"
+    android:background="@drawable/grey1" >
+
+ 
+
+    <TextView
+        android:id="@+id/feedbk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/sub1"
+        android:layout_marginLeft="42dp"
+        android:text="Subject 1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/sub1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="19dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/feedbk"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/sub1"
+        android:text="/100"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/feedbk"
+        android:layout_below="@+id/sub1"
+        android:layout_marginTop="38dp"
+        android:text="Subject 2"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/sub2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TextView02"
+        android:layout_toLeftOf="@+id/textView4"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/sub3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TextView01"
+        android:layout_toLeftOf="@+id/textView4"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rollno"
+        android:layout_alignTop="@+id/sub2"
+        android:text="/100"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView04"
+        android:layout_alignTop="@+id/sub3"
+        android:text="/100"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Send" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toLeftOf="@+id/textView4"
+        android:text="Roll no:"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rollno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Marks obtained in exam"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/rollno"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignLeft="@+id/textView5"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="STUDENT MARKS "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_below="@+id/sub2"
+        android:layout_marginTop="32dp"
+        android:text="Subject 3"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/feedbk"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="18dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="49dp"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="@android:color/black"/>
+
+</RelativeLayout>
